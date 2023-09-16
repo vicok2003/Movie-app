@@ -346,6 +346,10 @@
   .home-text{
     padding:26% 50px;
   }
+
+  .newsletter form .email{
+    width: auto;
+  }
 }
 @media (max-width: 991px){
   header{
@@ -363,11 +367,19 @@
   .home-text h1{
     font-size: 3rem;
   }
+
+  .newsletter form .email{
+    width: auto;
+  }
 }
 
 @media (max-width: 774px){
   .home-text{
     padding:54% 40px 0;
+  }
+
+  .newsletter form .email{
+    width: auto;
   }
 
   header{
