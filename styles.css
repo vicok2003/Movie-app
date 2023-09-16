@@ -373,6 +373,14 @@
   }
 }
 
+@media (max-width: 720px){
+  .newsletter form .email{
+    width: auto;
+  }
+
+}
+
+
 @media (max-width: 774px){
   .home-text{
     padding:54% 40px 0;
