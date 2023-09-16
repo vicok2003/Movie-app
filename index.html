@@ -11,11 +11,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
+
+     <!-- mobile nav -->
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home" onclick="closeNav()">Home</a>
+        <a href="#movie" onclick="closeNav()">Movies</a>
+        <a href="#coming" onclick="closeNav()">Coming</a>
+        <a href="#newsletter" onclick="closeNav()">Newsletter</a>
+      </div>
+
+<div id="main">
     <header>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opener">&#9776;</span>
+
         <a href="" class="logo">
             <i class='bx bxs-movie'></i>Movies
         </a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
 
         <ul class="navbar">
             <li><a href="#home" class="home-active">Home</a></li>
@@ -308,7 +321,7 @@
     <div class="copyright">
         <p>&#169; Vicok All Rights Reserved.</p>
     </div>
-
+</div>
 
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

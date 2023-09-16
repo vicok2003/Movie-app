@@ -1,23 +1,15 @@
-let header = document.querySelector('header')
-let menu = document.querySelector('#menu-icon')
-let navbar = document.querySelector('.navbar')
-
-window.addEventListener('scroll', () => {
-  header.classList.toggle('shadow', window.scrollY > 0);
-});
-
-
-menu.onClick = () => {
-  menu.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
+// mobile sidbar functionality
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "white";
 }
 
-window.onscroll = () => {
-  menu.classList.remove('bx-x');
-  navbar.classList.remove('active');
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "black";
 }
 
-
+// Autoplay
 var swiper = new Swiper(".home", {
     spaceBetween: 30,
     centeredSlides: true,
